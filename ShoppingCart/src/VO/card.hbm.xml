@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.cardVO" table="Card_Information">
+   
+   	<id name="card_id" type="int" column="Card_Id" >
+   		<generator class="increment"/>
+  	</id>
+  	
+  	<property name="cardnumber">
+   		<column name="CardNumber" />
+  	</property>
+  	
+  
+  	<property name="cvv">
+   		<column name="CVV" />
+  	</property>
+  
+  <property name="expiration_date">
+   		<column name="Expiration" />
+  	</property>
+  
+  
+  	</class>
+
+</hibernate-mapping>

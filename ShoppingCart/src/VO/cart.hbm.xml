@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.cartVO" table="Cart">
+   
+   	<id name="cart_id" type="int" column="Cart_Id" >
+   		<generator class="increment"/>
+  	</id>
+  	
+  	<many-to-one name="product_id" class="VO.productVO" column="product_Id"></many-to-one>
+  	<many-to-one name="login_id" class="VO.Regvo" column="User_Id"></many-to-one>
+  
+  	<property name="quantity">
+   		<column name="Quantity" />
+  	</property>
+  
+  <property name="name">
+   		<column name="Name" />
+  	</property>
+  
+  <property name="price">
+   		<column name="Price" />
+  	</property>
+  
+  <property name="activeflag">
+   		<column name="Status" />
+  </property>
+  
+  
+
+  	
+  
+</class>
+
+</hibernate-mapping>

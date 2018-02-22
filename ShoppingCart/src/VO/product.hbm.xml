@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.productVO" table="Product_details">
+   
+   	<id name="product_Id" type="int" column="product_Id" >
+   		<generator class="increment"/>
+  	</id>
+  	
+  	
+  	
+  	
+  	
+  	<property name="product_Description">
+   		<column name="Description" />
+  	</property>
+  	
+  	
+  	<property name="product_Price">
+   		<column name="Price" />
+  	</property>
+  	
+  	<property name="product_Name">
+   		<column name="Name" />
+  	</property>
+  	
+  	<property name="path">
+   		<column name="Path" />
+  	</property>
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  
+</class>
+
+</hibernate-mapping>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+  <property name="hibernate.connection.driver_class"> com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sd</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password">root</property>
+  <property name="hibernate.connection.pool_size">10</property>
+  <property name="show_sql">true</property>
+  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <property name="show_sql">true</property>
+  <property name="hibernate.format_sql">true</property>
+  <!-- Mapping files -->
+  <mapping resource="VO/Reg.hbm.xml"/>
+  <mapping resource="VO/product.hbm.xml"/>
+   <mapping resource="VO/cart.hbm.xml"/>
+    <mapping resource="VO/card.hbm.xml"/>
+     <mapping resource="VO/address.hbm.xml"/>
+    <mapping resource="VO/order1.hbm.xml"/>
+  
+  
+
+ 
+  <!--  <mapping resource="VO/Country.hbm.xml"/>
+    <mapping resource="VO/State.hbm.xml"/>
+     <mapping resource="VO/City.hbm.xml"/>
+      <mapping resource="VO/Subcategory.hbm.xml"/>
+      <mapping resource="VO/Package.hbm.xml"/>
+		<mapping resource="VO/Exam.hbm.xml"/>
+		<mapping resource="VO/Question.hbm.xml"/>    
+		<mapping resource="VO/Education.hbm.xml"/> 
+			<mapping resource="VO/Stream.hbm.xml"/>  
+			<mapping resource="VO/login.hbm.xml"/>  
+   	<mapping resource="VO/registration.hbm.xml"/>  
+  	 	<mapping resource="VO/candidate.hbm.xml"/>  
+  	 	<mapping resource="VO/Address.hbm.xml"/>  
+  	 	<mapping resource="VO/Company.hbm.xml"/>  
+  	 	<mapping resource="VO/Jobtype.hbm.xml"/> 
+  	 	<mapping resource="VO/Postjob.hbm.xml"/> 
+  	 	<mapping resource="VO/Appliedjob.hbm.xml"/> 
+  	 	  <mapping resource="VO/attachmentMappingVO.hbm.xml"/>
+  	 	   <mapping resource="VO/Resume.hbm.xml"/>
+  	 	    <mapping resource="VO/Result.hbm.xml"/>
+  	 	     <mapping resource="VO/Viewresult.hbm.xml"/> -->
+  
+</session-factory>
+</hibernate-configuration>

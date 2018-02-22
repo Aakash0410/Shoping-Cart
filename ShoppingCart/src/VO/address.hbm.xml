@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.addressVO" table="Address">
+   
+   	<id name="Address_id" type="int" column="Address_Id" >
+   		<generator class="increment"/>
+  	</id>
+  	
+  	<property name="address">
+   		<column name="Address" />
+  	</property>
+  	
+  
+  	<property name="state">
+   		<column name="State" />
+  	</property>
+  
+  <property name="city">
+   		<column name="City" />
+  	</property>
+  
+  <property name="zipcode">
+   		<column name="Zipcode" />
+  	</property>
+  	
+  	<many-to-one name="user_id" class="VO.Regvo" column="User_Id"></many-to-one>
+  
+
+  	
+  
+</class>
+
+</hibernate-mapping>
